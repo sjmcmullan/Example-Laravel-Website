@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS Posts (
+  Id      INTEGER PRIMARY KEY,
+  Author  VARCHAR(255) DEFAULT '' NOT NULL,
+  Title   TEXT,
+  Text    TEXT,
+  Comment_Count INTEGER DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS Comments (
+  Id      INTEGER PRIMARY KEY,
+  Author  VARCHAR(255) DEFAULT '' NOT NULL,
+  Text    TEXT,
+  Post_Id INTEGER
+);
+
+

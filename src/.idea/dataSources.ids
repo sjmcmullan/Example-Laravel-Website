@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Sqlite (Xerial) - production.sqlite" uuid="9f3d6616-d8db-4e99-8965-e78fd23038cd">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="Comments" schema="" catalog="" type="TABLE">
+      <column name="Id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="Author" sqlType="VARCHAR(255)" precision="0" scale="-1" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Text" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="Post_Id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <primary-key columns="id"/>
+    </table>
+    <table name="Posts" schema="" catalog="" type="TABLE">
+      <column name="Id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="Author" sqlType="VARCHAR(255)" precision="0" scale="-1" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Title" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="Text" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="Comment_Count" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <primary-key columns="id"/>
+    </table>
+  </data-source>
+</component>
